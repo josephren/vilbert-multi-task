@@ -1,3 +1,4 @@
+# 非常有意思，没有使用DistributedSampler， 而是自己基于tensorpack来做Loade。非常规
 # Copyright (c) Facebook, Inc. and its affiliates.
 
 # This source code is licensed under the MIT license found in the
@@ -20,7 +21,8 @@ from tqdm import tqdm, trange
 
 import torch
 from torch.utils.data import DataLoader, Dataset, RandomSampler
-from torch.utils.data.distributed import DistributedSampler
+from torch.utils.data.distributed import 
+
 from tensorboardX import SummaryWriter
 
 from pytorch_transformers.tokenization_bert import BertTokenizer
