@@ -31,7 +31,7 @@ if __name__ == "__main__":
     infiles = glob.glob(os.path.join(args.features_dir, "*"))
     id_list = []
     env = lmdb.open(args.lmdb_file, map_size=MAP_SIZE)
-
+    # 这里要改为List形式返回，且应该加入caption
     with env.begin(write=True) as txn:
         for infile in tqdm.tqdm(infiles):
             reader = np.load(infile, allow_pickle=True)
